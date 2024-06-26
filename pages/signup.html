@@ -18,27 +18,40 @@
 
         <div class="form">
           <input
+            id="userName"
+            name="userName"
             type="text"
             class="form-control my-3"
             placeholder="Enter your name"
           />
 
           <input
+            id="userEmail"
+            name="userEmail"
             type="email"
             class="form-control my-3"
             placeholder="Enter your email"
           />
 
           <input
+            id="userPass"
+            name="userPass"
             type="password"
             class="form-control my-3"
             placeholder="Enter your password"
           />
 
-          <button class="btn btn-outline-info w-100 my-3">Sign Up</button>
+          <p class="alert text-danger p-0"></p>
+
+          <button
+            type="submit"
+            class="signupBtn btn btn-outline-info w-100 my-3"
+          >
+            Sign Up
+          </button>
 
           <p class="text-white">
-            Don’t have an account?
+            Already have an account?
             <a href="/index.html" class="text-white text-decoration-none"
               >Login</a
             >
@@ -47,6 +60,6 @@
       </div>
     </div>
 
-    <script src="/js/signup.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>
