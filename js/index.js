@@ -31,6 +31,7 @@ function login() {
   }
 
   if (loggedInUser) {
+    // Get user name to add in main welcome message
     localStorage.setItem("loggedInUser", loggedInUser);
     window.location.href = "./pages/main.html";
   } else {
