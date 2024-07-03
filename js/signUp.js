@@ -11,8 +11,8 @@ let users = [];
 let nameRegex = /^[a-zA-Z].{5,15}$/;
 let emailRegex =
   /^(https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z]{2,}(\.[a-zA-Z]{2,})(\.[a-zA-Z]{2,})?\/[a-zA-Z0-9]{2,}|((https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z]{2,}(\.[a-zA-Z]{2,})(\.[a-zA-Z]{2,})?)|(https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}(\.[a-zA-Z0-9]{2,})?$/;
-let passRegex =/^.{2,4}$/
-  // /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&.])[A-Za-z\d@$!%*#?&.]{8,15}$/;
+let passRegex =
+  /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&.])[A-Za-z\d@$!%*#?&.]{8,15}$/;
 
 if (localStorage.getItem("users") !== null) {
   users = JSON.parse(localStorage.getItem("users"));
@@ -96,7 +96,3 @@ function addUser() {
 
 signUpBtn.addEventListener("click", addUser);
 
-
-/* 
-Start of Login page logic
-*/
