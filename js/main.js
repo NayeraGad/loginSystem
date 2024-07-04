@@ -9,6 +9,7 @@ loggedInUserName.innerHTML = loggedInUser;
 // Logout
 logoutBtn.addEventListener("click", () => {
   localStorage.removeItem("loggedInUser");
-  const logoutUrl = window.location.origin + "/index.html";
-  window.location.href = "../index.html";
+  const baseUrl = window.location.origin;
+  const logoutUrl = baseUrl + "/index.html";
+  window.location.href = logoutUrl;
 });
