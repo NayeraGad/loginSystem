@@ -33,8 +33,7 @@ function login() {
   if (loggedInUser) {
     // Get user name and add it to local storage
     localStorage.setItem("loggedInUser", loggedInUser);
-    const baseUrl = window.location.origin;
-    const loginUrl = baseUrl + "/pages/main.html";
+    const loginUrl = "./pages/main.html";
     window.location.href = loginUrl;
   } else {
     alertMess.innerHTML = `<p class="text-danger p-0">Incorrect email or password</p>`;
