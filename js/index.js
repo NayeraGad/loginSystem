@@ -31,9 +31,9 @@ function login() {
   }
 
   if (loggedInUser) {
-    // Get user name to add in main welcome message
+    // Get user name and add it to local storage
     localStorage.setItem("loggedInUser", loggedInUser);
-    window.location.href = "./pages/main.html";
+    window.location.href = "../pages/main.html";
   } else {
     alertMess.innerHTML = `<p class="text-danger p-0">Incorrect email or password</p>`;
   }
